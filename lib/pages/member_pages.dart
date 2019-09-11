@@ -469,12 +469,222 @@ class MemberPage extends StatelessWidget {
                   )
                 ],
               ),
-           
-              new Text("23"),
-              new Text("23"),
-              new Text("23"),
+
+
+              Container(
+                margin: EdgeInsets.only(top: ScreenUtil().setWidth(43)),
+                padding: EdgeInsets.only(top:ScreenUtil().setWidth(18),left: ScreenUtil().setWidth(25)),
+                width: ScreenUtil().setWidth(690),
+                height: ScreenUtil().setWidth(1111),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(ScreenUtil().setWidth(20))
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
+                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
+                          ),
+
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                ProgressWidget(0.1),
+                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
+                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                              ],
+                            ),
+                          ),
+
+                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                        ],
+                      ),
+                    ),
+
+
+                    Container(
+                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
+                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
+                          ),
+
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                ProgressWidget(0.3),
+                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
+                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                              ],
+                            ),
+                          ),
+
+                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                        ],
+                      ),
+                    ),
+
+
+                    Container(
+                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
+                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
+                          ),
+
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                ProgressWidget(1.0),
+                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
+                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                              ],
+                            ),
+                          ),
+
+                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                        ],
+                      ),
+                    ),
+
+
+                    Container(
+                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
+                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
+                          ),
+
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                ProgressWidget(0.8),
+                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
+                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                              ],
+                            ),
+                          ),
+
+                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                        ],
+                      ),
+                    ),
+
+
+                    Container(
+                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
+                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
+                          ),
+
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                ProgressWidget(0.4),
+                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
+                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                              ],
+                            ),
+                          ),
+
+                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                        ],
+                      ),
+                    ),
+
+
+
+                    Container(
+                      margin: EdgeInsets.only(top: ScreenUtil().setWidth(50),left: ScreenUtil().setWidth(280)),
+                      width: ScreenUtil().setWidth(302),
+                      height: ScreenUtil().setWidth(74),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(54, 54, 54, 1),
+                        borderRadius: BorderRadius.circular(ScreenUtil().setWidth(37))
+                      ),
+                      child: Center(
+                        child: new  Text("邀请好友 赚大钱",style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1),fontSize: ScreenUtil().setSp(30))),
+                      ),
+                    )
+
+
+
+
+
+
+                  ],
+                ),
+              ),
+              
+              Container(
+                margin: EdgeInsets.only(top:ScreenUtil().setWidth(56),bottom: ScreenUtil().setWidth(31)),
+                width: ScreenUtil().setWidth(750),
+                height: ScreenUtil().setWidth(188),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(ScreenUtil().setWidth(20)),
+                  color:Colors.red
+                ),
+              )
+
             ],
           )),
         ));
   }
 }
+
+
+// 进度条
+class ProgressWidget extends StatefulWidget {
+  ProgressWidget(this.rate);
+  double rate;
+  @override
+  _ProgressWidgetState createState() => _ProgressWidgetState();
+}
+
+class _ProgressWidgetState extends State<ProgressWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: ScreenUtil().setWidth(564),
+      height: ScreenUtil().setWidth(15),
+      decoration: BoxDecoration(
+          border: Border.all(
+              color: Color.fromRGBO(222, 222, 222, 1),
+              width: ScreenUtil().setWidth(2))
+      ),
+
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
+        child: new LinearProgressIndicator(
+          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+          value: widget.rate,
+          valueColor:
+          new AlwaysStoppedAnimation<Color>(Color.fromRGBO(41, 41, 41, 1)),
+        ),
+      ),
+    );
+  }
+}
+
+
+
