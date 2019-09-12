@@ -469,189 +469,399 @@ class MemberPage extends StatelessWidget {
                   )
                 ],
               ),
-
-
               Container(
-                margin: EdgeInsets.only(top: ScreenUtil().setWidth(43)),
-                padding: EdgeInsets.only(top:ScreenUtil().setWidth(18),left: ScreenUtil().setWidth(25)),
-                width: ScreenUtil().setWidth(690),
-                height: ScreenUtil().setWidth(1111),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(ScreenUtil().setWidth(20))
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Stack(
                   children: <Widget>[
                     Container(
-                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Container(
-                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
-                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
-                          ),
-
-                          Container(
-                            child: Row(
+                            margin:
+                                EdgeInsets.only(top: ScreenUtil().setWidth(43)),
+                            padding: EdgeInsets.only(
+                                top: ScreenUtil().setWidth(18),
+                                left: ScreenUtil().setWidth(25)),
+                            width: ScreenUtil().setWidth(690),
+                            height: ScreenUtil().setWidth(1111),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(
+                                    ScreenUtil().setWidth(20))),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                ProgressWidget(0.1),
-                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
-                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(84)),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Container(
+                                        margin: EdgeInsets.only(
+                                            left: ScreenUtil().setWidth(146)),
+                                        child: new Text("A组好友12人",
+                                            style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    48, 48, 48, 1),
+                                                fontSize:
+                                                    ScreenUtil().setSp(22))),
+                                      ),
+                                      Container(
+                                        child: Row(
+                                          children: <Widget>[
+                                            ProgressWidget(0.1),
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: ScreenUtil()
+                                                      .setWidth(23)),
+                                            ),
+                                            new Text("90人",
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        153, 153, 153, 1),
+                                                    fontSize:
+                                                        ScreenUtil().setSp(28)))
+                                          ],
+                                        ),
+                                      ),
+                                      new Text("当前有效A组好友人数",
+                                          style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  153, 153, 153, 1),
+                                              fontSize: ScreenUtil().setSp(28)))
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(66)),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Container(
+                                        margin: EdgeInsets.only(
+                                            left: ScreenUtil().setWidth(146)),
+                                        child: new Text("A组好友12人",
+                                            style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    48, 48, 48, 1),
+                                                fontSize:
+                                                    ScreenUtil().setSp(22))),
+                                      ),
+                                      Container(
+                                        child: Row(
+                                          children: <Widget>[
+                                            ProgressWidget(0.3),
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: ScreenUtil()
+                                                      .setWidth(23)),
+                                            ),
+                                            new Text("90人",
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        153, 153, 153, 1),
+                                                    fontSize:
+                                                        ScreenUtil().setSp(28)))
+                                          ],
+                                        ),
+                                      ),
+                                      new Text("当前有效A组好友人数",
+                                          style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  153, 153, 153, 1),
+                                              fontSize: ScreenUtil().setSp(28)))
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(75)),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Container(
+                                        margin: EdgeInsets.only(
+                                            left: ScreenUtil().setWidth(146)),
+                                        child: new Text("A组好友12人",
+                                            style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    48, 48, 48, 1),
+                                                fontSize:
+                                                    ScreenUtil().setSp(22))),
+                                      ),
+                                      Container(
+                                        child: Row(
+                                          children: <Widget>[
+                                            ProgressWidget(1.0),
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: ScreenUtil()
+                                                      .setWidth(23)),
+                                            ),
+                                            new Text("90人",
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        153, 153, 153, 1),
+                                                    fontSize:
+                                                        ScreenUtil().setSp(28)))
+                                          ],
+                                        ),
+                                      ),
+                                      new Text("当前有效A组好友人数",
+                                          style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  153, 153, 153, 1),
+                                              fontSize: ScreenUtil().setSp(28)))
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(76)),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Container(
+                                        margin: EdgeInsets.only(
+                                            left: ScreenUtil().setWidth(146)),
+                                        child: new Text("A组好友12人",
+                                            style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    48, 48, 48, 1),
+                                                fontSize:
+                                                    ScreenUtil().setSp(22))),
+                                      ),
+                                      Container(
+                                        child: Row(
+                                          children: <Widget>[
+                                            ProgressWidget(0.8),
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: ScreenUtil()
+                                                      .setWidth(23)),
+                                            ),
+                                            new Text("90人",
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        153, 153, 153, 1),
+                                                    fontSize:
+                                                        ScreenUtil().setSp(28)))
+                                          ],
+                                        ),
+                                      ),
+                                      new Text("当前有效A组好友人数",
+                                          style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  153, 153, 153, 1),
+                                              fontSize: ScreenUtil().setSp(28)))
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(86)),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Container(
+                                        margin: EdgeInsets.only(
+                                            left: ScreenUtil().setWidth(146)),
+                                        child: new Text("A组好友12人",
+                                            style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    48, 48, 48, 1),
+                                                fontSize:
+                                                    ScreenUtil().setSp(22))),
+                                      ),
+                                      Container(
+                                        child: Row(
+                                          children: <Widget>[
+                                            ProgressWidget(0.4),
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: ScreenUtil()
+                                                      .setWidth(23)),
+                                            ),
+                                            new Text("90人",
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        153, 153, 153, 1),
+                                                    fontSize:
+                                                        ScreenUtil().setSp(28)))
+                                          ],
+                                        ),
+                                      ),
+                                      new Text("当前有效A组好友人数",
+                                          style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  153, 153, 153, 1),
+                                              fontSize: ScreenUtil().setSp(28)))
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),
                           ),
-
-                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
+                          Container(
+                            width: ScreenUtil().setWidth(750),
+                            height: ScreenUtil().setWidth(18),
+                            // color: Colors.black,
+                          )
                         ],
                       ),
                     ),
-
-
-                    Container(
-                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
-                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
-                          ),
-
-                          Container(
-                            child: Row(
-                              children: <Widget>[
-                                ProgressWidget(0.3),
-                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
-                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                              ],
-                            ),
-                          ),
-
-                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                        ],
-                      ),
-                    ),
-
-
-                    Container(
-                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
-                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
-                          ),
-
-                          Container(
-                            child: Row(
-                              children: <Widget>[
-                                ProgressWidget(1.0),
-                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
-                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                              ],
-                            ),
-                          ),
-
-                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                        ],
-                      ),
-                    ),
-
-
-                    Container(
-                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
-                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
-                          ),
-
-                          Container(
-                            child: Row(
-                              children: <Widget>[
-                                ProgressWidget(0.8),
-                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
-                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                              ],
-                            ),
-                          ),
-
-                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                        ],
-                      ),
-                    ),
-
-
-                    Container(
-                      margin:EdgeInsets.only(top:ScreenUtil().setWidth(75)),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left: ScreenUtil().setWidth(146)),
-                            child: new Text("A组好友12人",style: TextStyle(color: Color.fromRGBO(48, 48, 48, 1),fontSize: ScreenUtil().setSp(22))),
-                          ),
-
-                          Container(
-                            child: Row(
-                              children: <Widget>[
-                                ProgressWidget(0.4),
-                                Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(23)),),
-                                new Text("90人",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                              ],
-                            ),
-                          ),
-
-                          new  Text("当前有效A组好友人数",style: TextStyle(color: Color.fromRGBO(153, 153, 153, 1),fontSize: ScreenUtil().setSp(28)))
-                        ],
-                      ),
-                    ),
-
-
-
-                    Container(
-                      margin: EdgeInsets.only(top: ScreenUtil().setWidth(50),left: ScreenUtil().setWidth(280)),
-                      width: ScreenUtil().setWidth(302),
-                      height: ScreenUtil().setWidth(74),
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(54, 54, 54, 1),
-                        borderRadius: BorderRadius.circular(ScreenUtil().setWidth(37))
-                      ),
-                      child: Center(
-                        child: new  Text("邀请好友 赚大钱",style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1),fontSize: ScreenUtil().setSp(30))),
+                    Positioned(
+                      top: ScreenUtil().setWidth(1098),
+                      left: ScreenUtil().setWidth(370),
+                      child: Container(
+                        width: ScreenUtil().setWidth(302),
+                        height: ScreenUtil().setWidth(74),
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(54, 54, 54, 1),
+                            borderRadius: BorderRadius.circular(
+                                ScreenUtil().setWidth(37))),
+                        child: Center(
+                          child: new Text("邀请好友 赚大钱",
+                              style: TextStyle(
+                                  color: Color.fromRGBO(255, 255, 255, 1),
+                                  fontSize: ScreenUtil().setSp(30))),
+                        ),
                       ),
                     )
-
-
-
-
-
-
                   ],
                 ),
               ),
-              
               Container(
-                margin: EdgeInsets.only(top:ScreenUtil().setWidth(56),bottom: ScreenUtil().setWidth(31)),
+                margin: EdgeInsets.only(
+                    top: ScreenUtil().setWidth(56),
+                    bottom: ScreenUtil().setWidth(31)),
                 width: ScreenUtil().setWidth(750),
                 height: ScreenUtil().setWidth(188),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(ScreenUtil().setWidth(20)),
-                  color:Colors.red
+                    borderRadius:
+                        BorderRadius.circular(ScreenUtil().setWidth(20)),
+                    color: Colors.white),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.only(top: ScreenUtil().setHeight(38)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(5),
+                                      right: ScreenUtil().setWidth(11)),
+                                  child: ClipOval(
+                                    child: Container(
+                                      width: ScreenUtil().setWidth(12),
+                                      height: ScreenUtil().setWidth(12),
+                                      color: Color.fromRGBO(153, 153, 153, 1),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(11),
+                                      right: ScreenUtil().setWidth(10)),
+                                  child: ClipOval(
+                                    child: Container(
+                                      width: ScreenUtil().setWidth(16),
+                                      height: ScreenUtil().setWidth(16),
+                                      color: Color.fromRGBO(153, 153, 153, 1),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  child: ClipOval(
+                                    child: Container(
+                                      width: ScreenUtil().setWidth(24),
+                                      height: ScreenUtil().setWidth(24),
+                                      color: Color.fromRGBO(153, 153, 153, 1),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: ScreenUtil().setWidth(28)),
+                            child: new Text("关于A组、B组的定义",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(18, 18, 18, 1),
+                                    fontSize: ScreenUtil().setWidth(30))),
+                          ),
+                          Container(
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(5),
+                                      right: ScreenUtil().setWidth(11)),
+                                  child: ClipOval(
+                                    child: Container(
+                                      width: ScreenUtil().setWidth(24),
+                                      height: ScreenUtil().setWidth(24),
+                                      color: Color.fromRGBO(153, 153, 153, 1),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      top: ScreenUtil().setWidth(11),
+                                      right: ScreenUtil().setWidth(10)),
+                                  child: ClipOval(
+                                    child: Container(
+                                      width: ScreenUtil().setWidth(16),
+                                      height: ScreenUtil().setWidth(16),
+                                      color: Color.fromRGBO(153, 153, 153, 1),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  child: ClipOval(
+                                    child: Container(
+                                      width: ScreenUtil().setWidth(12),
+                                      height: ScreenUtil().setWidth(12),
+                                      color: Color.fromRGBO(153, 153, 153, 1),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: ScreenUtil().setHeight(26)),
+                    ),
+                    new Text("A组用户就是自己通过分享所关联的用户;",
+                        style: TextStyle(
+                            color: Color.fromRGBO(107, 107, 107, 1),
+                            fontSize: ScreenUtil().setSp(24))),
+                    new Text(" B组用户就是自己A组用户所关联的用户。",
+                        style: TextStyle(
+                            color: Color.fromRGBO(107, 107, 107, 1),
+                            fontSize: ScreenUtil().setSp(24))),
+                  ],
                 ),
               )
-
             ],
           )),
         ));
   }
 }
-
 
 // 进度条
 class ProgressWidget extends StatefulWidget {
@@ -667,24 +877,21 @@ class _ProgressWidgetState extends State<ProgressWidget> {
     return Container(
       width: ScreenUtil().setWidth(564),
       height: ScreenUtil().setWidth(15),
-      decoration: BoxDecoration(
-          border: Border.all(
-              color: Color.fromRGBO(222, 222, 222, 1),
-              width: ScreenUtil().setWidth(2))
-      ),
-
-      child: ClipRRect(
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
+          border: Border.all(color: Color.fromRGBO(222, 222, 222, 1),width: 1.0)
+        ),
+        child: ClipRRect(
         borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
         child: new LinearProgressIndicator(
           backgroundColor: Color.fromRGBO(255, 255, 255, 1),
           value: widget.rate,
           valueColor:
-          new AlwaysStoppedAnimation<Color>(Color.fromRGBO(41, 41, 41, 1)),
+              new AlwaysStoppedAnimation<Color>(Color.fromRGBO(41, 41, 41, 1)),
         ),
       ),
+      )
     );
   }
 }
-
-
-
