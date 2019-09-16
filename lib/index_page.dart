@@ -6,6 +6,8 @@ import 'pages/home_page.dart';
 import 'pages/member_pages.dart';
 import 'pages/mine_page.dart';
 import 'pages/share_page.dart';
+import 'pages/take_money.dart';
+import 'pages/income_page.dart';
 
 
 
@@ -49,7 +51,8 @@ class _IndexPageState extends State<IndexPage> {
   // 底部导航连接
   final List tabBodies = [
     HomePage(),
-    SharePage(),  
+//    SharePage(),
+    IncomeDescPage(),
     MemberPage(),
     MinePage()
   ];

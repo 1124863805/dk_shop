@@ -77,6 +77,8 @@ class HomePage extends StatelessWidget {
         ),
       ),
     ];
+
+
     return Scaffold(
         backgroundColor: Color.fromRGBO(239, 239, 244, 1),
         body: Container(
@@ -346,175 +348,7 @@ class HomePage extends StatelessWidget {
                         physics: NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         itemBuilder: (BuildContext context, int index) {
-                          return Center(
-                            child: Container(
-                              margin: EdgeInsets.only(
-                                  top: ScreenUtil().setWidth(21)),
-                              width: ScreenUtil().setWidth(710),
-                              height: ScreenUtil().setWidth(483),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(
-                                      ScreenUtil().setWidth(10))),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Stack(
-                                    children: <Widget>[
-                                      Container(
-                                        width: ScreenUtil().setWidth(710),
-                                        height: ScreenUtil().setWidth(321),
-                                        decoration: BoxDecoration(
-                                            image: new DecorationImage(
-                                                image: AssetImage(
-                                                    "images/goods1.jpg.webp"),
-                                                fit: BoxFit.fill),
-                                            borderRadius: BorderRadius.circular(
-                                                ScreenUtil().setWidth(10))),
-                                      ),
-                                      Positioned(
-                                        top: ScreenUtil().setWidth(253),
-                                        child: Opacity(
-                                          opacity: 0.75,
-                                          child: Container(
-                                            alignment: Alignment.centerLeft,
-                                            padding: EdgeInsets.only(
-                                                left:
-                                                    ScreenUtil().setWidth(21)),
-                                            width: ScreenUtil().setWidth(710),
-                                            height: ScreenUtil().setWidth(68),
-                                            color: Color.fromRGBO(0, 0, 0, 1),
-                                            child: new Text(
-                                                "河南农家山上散养新鲜土鸡蛋自养 新鲜",
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: ScreenUtil()
-                                                        .setSp(26))),
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Container(
-                                    margin: EdgeInsets.only(
-                                        top: ScreenUtil().setHeight(30)),
-                                    padding: EdgeInsets.only(
-                                        left: ScreenUtil().setWidth(21)),
-                                    child: Column(
-                                      children: <Widget>[
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: <Widget>[
-                                            Text.rich(TextSpan(
-                                                text: "券后价",
-                                                style: TextStyle(
-                                                    color: Color.fromRGBO(
-                                                        167, 167, 167, 1),
-                                                    fontSize:
-                                                        ScreenUtil().setSp(22)),
-                                                children: [
-                                                  TextSpan(
-                                                      text: "￥",
-                                                      style: TextStyle(
-                                                          color: Color.fromRGBO(
-                                                              255, 18, 18, 1),
-                                                          fontSize: ScreenUtil()
-                                                              .setSp(22))),
-                                                  TextSpan(
-                                                      text: "5.90",
-                                                      style: TextStyle(
-                                                          color: Color.fromRGBO(
-                                                              255, 18, 18, 1),
-                                                          fontSize: ScreenUtil()
-                                                              .setSp(42))),
-                                                  TextSpan(text: "   "),
-                                                  TextSpan(
-                                                      text: "原价",
-                                                      style: TextStyle(
-                                                          color: Color.fromRGBO(
-                                                              127, 127, 127, 1),
-                                                          fontSize: ScreenUtil()
-                                                              .setSp(22))),
-                                                  TextSpan(
-                                                      text: "￥12.85",
-                                                      style: TextStyle(
-                                                          decoration:
-                                                              TextDecoration
-                                                                  .lineThrough,
-                                                          color: Color.fromRGBO(
-                                                              127, 127, 127, 1),
-                                                          fontSize: ScreenUtil()
-                                                              .setSp(22))),
-                                                ])),
-                                            Container(
-                                              margin: EdgeInsets.only(
-                                                  right: ScreenUtil()
-                                                      .setWidth(71)),
-                                              child: new Text("已售3761件",
-                                                  style: TextStyle(
-                                                      color: Color.fromRGBO(
-                                                          127, 127, 127, 1),
-                                                      fontSize: ScreenUtil()
-                                                          .setSp(22))),
-                                            )
-                                          ],
-                                        ),
-                                        Padding(
-                                            padding: EdgeInsets.only(
-                                                top: ScreenUtil()
-                                                    .setHeight(18))),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: <Widget>[
-                                            Container(
-                                              alignment: Alignment.centerLeft,
-                                              padding: EdgeInsets.only(
-                                                  left: ScreenUtil()
-                                                      .setWidth(18)),
-                                              width: ScreenUtil().setWidth(126),
-                                              height: ScreenUtil().setWidth(43),
-                                              decoration: BoxDecoration(
-                                                  image: new DecorationImage(
-                                                      image: AssetImage(
-                                                          "images/icon_quan.png"))),
-                                              child: new Text("券￥6",
-                                                  style: TextStyle(
-                                                      color: Color.fromRGBO(
-                                                          235, 150, 33, 1),
-                                                      fontSize: ScreenUtil()
-                                                          .setSp(24))),
-                                            ),
-                                            Container(
-                                              margin: EdgeInsets.only(
-                                                  right: ScreenUtil()
-                                                      .setWidth(23)),
-                                              alignment: Alignment.center,
-                                              width: ScreenUtil().setWidth(201),
-                                              height: ScreenUtil().setWidth(60),
-                                              decoration: BoxDecoration(
-                                                  color: Color.fromRGBO(
-                                                      62, 62, 62, 1),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          ScreenUtil()
-                                                              .setWidth(30))),
-                                              child: new Text("分享赚",
-                                                  style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: ScreenUtil()
-                                                          .setSp(24))),
-                                            )
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          );
+                          return GoodsList("images/goods1.jpg.webp","李耀",1,1,1,1);
                         })
                   ],
                 ),
@@ -522,5 +356,201 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ));
+  }
+}
+
+class GoodsList extends StatefulWidget {
+
+
+  final String goodUrl;
+  final String title;
+  final double price;
+  final double oraginPrice;
+  final int num;
+  final double coupon;
+
+
+  GoodsList(this.goodUrl, this.title, this.price, this.oraginPrice, this.num,
+      this.coupon);
+
+
+
+  @override
+  _GoodsListState createState() => _GoodsListState();
+
+}
+
+class _GoodsListState extends State<GoodsList> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        margin: EdgeInsets.only(
+            top: ScreenUtil().setWidth(21)),
+        width: ScreenUtil().setWidth(710),
+        height: ScreenUtil().setWidth(483),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(
+                ScreenUtil().setWidth(10))),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Stack(
+              children: <Widget>[
+                Container(
+                  width: ScreenUtil().setWidth(710),
+                  height: ScreenUtil().setWidth(321),
+                  decoration: BoxDecoration(
+                      image: new DecorationImage(
+                          image: AssetImage(
+                             widget.goodUrl),
+                          fit: BoxFit.fill),
+                      borderRadius: BorderRadius.circular(
+                          ScreenUtil().setWidth(10))),
+                ),
+                Positioned(
+                  top: ScreenUtil().setWidth(253),
+                  child: Opacity(
+                    opacity: 0.75,
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      padding: EdgeInsets.only(
+                          left:
+                          ScreenUtil().setWidth(21)),
+                      width: ScreenUtil().setWidth(710),
+                      height: ScreenUtil().setWidth(68),
+                      color: Color.fromRGBO(0, 0, 0, 1),
+                      child: new Text(
+                          widget.title,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: ScreenUtil()
+                                  .setSp(26))),
+                    ),
+                  ),
+                )
+              ],
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                  top: ScreenUtil().setHeight(30)),
+              padding: EdgeInsets.only(
+                  left: ScreenUtil().setWidth(21)),
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment:
+                    MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text.rich(TextSpan(
+                          text: "券后价",
+                          style: TextStyle(
+                              color: Color.fromRGBO(
+                                  167, 167, 167, 1),
+                              fontSize:
+                              ScreenUtil().setSp(22)),
+                          children: [
+                            TextSpan(
+                                text: "￥",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(
+                                        255, 18, 18, 1),
+                                    fontSize: ScreenUtil()
+                                        .setSp(22))),
+                            TextSpan(
+                                text: widget.price.toString(),
+                                style: TextStyle(
+                                    color: Color.fromRGBO(
+                                        255, 18, 18, 1),
+                                    fontSize: ScreenUtil()
+                                        .setSp(42))),
+                            TextSpan(text: "   "),
+                            TextSpan(
+                                text: "原价",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(
+                                        127, 127, 127, 1),
+                                    fontSize: ScreenUtil()
+                                        .setSp(22))),
+                            TextSpan(
+                                text: "￥"+widget.oraginPrice.toString(),
+                                style: TextStyle(
+                                    decoration:
+                                    TextDecoration
+                                        .lineThrough,
+                                    color: Color.fromRGBO(
+                                        127, 127, 127, 1),
+                                    fontSize: ScreenUtil()
+                                        .setSp(22))),
+                          ])),
+                      Container(
+                        margin: EdgeInsets.only(
+                            right: ScreenUtil()
+                                .setWidth(71)),
+                        child: new Text("已售${widget.num}件",
+                            style: TextStyle(
+                                color: Color.fromRGBO(
+                                    127, 127, 127, 1),
+                                fontSize: ScreenUtil()
+                                    .setSp(22))),
+                      )
+                    ],
+                  ),
+                  Padding(
+                      padding: EdgeInsets.only(
+                          top: ScreenUtil()
+                              .setHeight(18))),
+                  Row(
+                    mainAxisAlignment:
+                    MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        padding: EdgeInsets.only(
+                            left: ScreenUtil()
+                                .setWidth(18)),
+                        width: ScreenUtil().setWidth(126),
+                        height: ScreenUtil().setWidth(43),
+                        decoration: BoxDecoration(
+                            image: new DecorationImage(
+                                image: AssetImage(
+                                    "images/icon_quan.png"))),
+                        child: new Text("券￥${widget.coupon}",
+                            style: TextStyle(
+                                color: Color.fromRGBO(
+                                    235, 150, 33, 1),
+                                fontSize: ScreenUtil()
+                                    .setSp(24))),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(
+                            right: ScreenUtil()
+                                .setWidth(23)),
+                        alignment: Alignment.center,
+                        width: ScreenUtil().setWidth(201),
+                        height: ScreenUtil().setWidth(60),
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(
+                                62, 62, 62, 1),
+                            borderRadius:
+                            BorderRadius.circular(
+                                ScreenUtil()
+                                    .setWidth(30))),
+                        child: new Text("分享赚",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: ScreenUtil()
+                                    .setSp(24))),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

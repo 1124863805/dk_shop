@@ -866,7 +866,9 @@ class MemberPage extends StatelessWidget {
 // 进度条
 class ProgressWidget extends StatefulWidget {
   ProgressWidget(this.rate);
+
   double rate;
+
   @override
   _ProgressWidgetState createState() => _ProgressWidgetState();
 }
@@ -875,23 +877,22 @@ class _ProgressWidgetState extends State<ProgressWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: ScreenUtil().setWidth(564),
-      height: ScreenUtil().setWidth(15),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
-          border: Border.all(color: Color.fromRGBO(222, 222, 222, 1),width: 1.0)
-        ),
-        child: ClipRRect(
-        borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
-        child: new LinearProgressIndicator(
-          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
-          value: widget.rate,
-          valueColor:
-              new AlwaysStoppedAnimation<Color>(Color.fromRGBO(41, 41, 41, 1)),
-        ),
-      ),
-      )
-    );
+        width: ScreenUtil().setWidth(564),
+        height: ScreenUtil().setWidth(15),
+        child: Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
+              border: Border.all(
+                  color: Color.fromRGBO(222, 222, 222, 1), width: 1.0)),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(ScreenUtil().setWidth(7)),
+            child: new LinearProgressIndicator(
+              backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+              value: widget.rate,
+              valueColor: new AlwaysStoppedAnimation<Color>(
+                  Color.fromRGBO(41, 41, 41, 1)),
+            ),
+          ),
+        ));
   }
 }

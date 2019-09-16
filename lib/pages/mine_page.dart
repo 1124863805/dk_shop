@@ -15,8 +15,61 @@ class MinePage extends StatelessWidget {
     ScreenUtil.instance = ScreenUtil(width: 750, height: 1796)..init(context);
     test();
 
-    //状态栏的高度 px
-    double statusBarHeight = ScreenUtil.statusBarHeight;
+    // //状态栏的高度 px
+    // double statusBarHeight = ScreenUtil.statusBarHeight;
+
+    // 图标Widget
+    Widget _iconWidget(String url,String text,double size) {
+      return Container(
+        child: Column(
+          children: <Widget>[
+            Container(
+              child: Image.asset(
+                url,
+                width: ScreenUtil().setWidth(size),
+                height: ScreenUtil().setWidth(size),
+              ),
+            ),
+            Container(
+              child: new Text(
+                text,
+                style: TextStyle(
+                    color: Color.fromRGBO(40, 40, 40, 1),
+                    fontSize: ScreenUtil().setSp(28)),
+              ),
+            )
+          ],
+        ),
+      );
+    }
+
+    Widget _income(String price,String text){
+      return Container(
+        child: Column(
+          children: <Widget>[
+            new Text(price,
+                style: TextStyle(
+                    color:
+                    Color.fromRGBO(40, 40, 40, 1),
+                    fontSize:
+                    ScreenUtil().setWidth(34))),
+            Padding(
+                padding: EdgeInsets.only(
+                    top: ScreenUtil().setWidth(15))),
+            new Text(text,
+                style: TextStyle(
+                    color:
+                    Color.fromRGBO(87, 87, 87, 1),
+                    fontSize:
+                    ScreenUtil().setWidth(26))),
+          ],
+        ),
+      );
+    }
+
+    final incomeList = [_income("160","本月预估(元）"),_income("160","本月预估(元）"),_income("160","本月预估(元）")];
+
+
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -45,71 +98,7 @@ class MinePage extends StatelessWidget {
                               EdgeInsets.only(top: ScreenUtil().setHeight(51)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: <Widget>[
-                              Container(
-                                child: Column(
-                                  children: <Widget>[
-                                    new Text("160",
-                                        style: TextStyle(
-                                            color:
-                                                Color.fromRGBO(40, 40, 40, 1),
-                                            fontSize:
-                                                ScreenUtil().setWidth(34))),
-                                    Padding(
-                                        padding: EdgeInsets.only(
-                                            top: ScreenUtil().setWidth(15))),
-                                    new Text("本月预估(元）",
-                                        style: TextStyle(
-                                            color:
-                                                Color.fromRGBO(87, 87, 87, 1),
-                                            fontSize:
-                                                ScreenUtil().setWidth(26))),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                child: Column(
-                                  children: <Widget>[
-                                    new Text("160",
-                                        style: TextStyle(
-                                            color:
-                                                Color.fromRGBO(40, 40, 40, 1),
-                                            fontSize:
-                                                ScreenUtil().setWidth(34))),
-                                    Padding(
-                                        padding: EdgeInsets.only(
-                                            top: ScreenUtil().setWidth(15))),
-                                    new Text("本月预估(元）",
-                                        style: TextStyle(
-                                            color:
-                                                Color.fromRGBO(87, 87, 87, 1),
-                                            fontSize:
-                                                ScreenUtil().setWidth(26))),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                child: Column(
-                                  children: <Widget>[
-                                    new Text("160",
-                                        style: TextStyle(
-                                            color:
-                                                Color.fromRGBO(40, 40, 40, 1),
-                                            fontSize:
-                                                ScreenUtil().setWidth(34))),
-                                    Padding(
-                                        padding: EdgeInsets.only(
-                                            top: ScreenUtil().setWidth(15))),
-                                    new Text("本月预估(元）",
-                                        style: TextStyle(
-                                            color:
-                                                Color.fromRGBO(87, 87, 87, 1),
-                                            fontSize:
-                                                ScreenUtil().setWidth(26))),
-                                  ],
-                                ),
-                              ),
-                            ],
+                            children: incomeList, //收益部分
                           ),
                         ),
                         Container(
@@ -197,90 +186,10 @@ class MinePage extends StatelessWidget {
                         crossAxisCount: 4, //横轴三个子widget
                       ),
                       children: <Widget>[
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_daifukuan.png",
-                                  width: ScreenUtil().setWidth(52),
-                                  height: ScreenUtil().setWidth(52),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "待付款",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_daifahua.png",
-                                  width: ScreenUtil().setWidth(52),
-                                  height: ScreenUtil().setWidth(52),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "待发货",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_daishouhuo.png",
-                                  width: ScreenUtil().setWidth(52),
-                                  height: ScreenUtil().setWidth(52),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "待收货",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_dingdan.png",
-                                  width: ScreenUtil().setWidth(52),
-                                  height: ScreenUtil().setWidth(52),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "全部订单",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
+                        _iconWidget("images/icon_daifukuan.png","待付款",52.0),
+                        _iconWidget("images/icon_daifahua.png","待发货",52.0),
+                        _iconWidget("images/icon_daishouhuo.png","待收货",52.0),
+                        _iconWidget("images/icon_dingdan.png","全部订单",52.0),
                       ],
                     ),
                   ),
@@ -310,153 +219,19 @@ class MinePage extends StatelessWidget {
                           crossAxisCount: 4, //横轴三个子widget
                           childAspectRatio: 1.5),
                       children: <Widget>[
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_shouyi.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "收益详情",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
+                          InkWell(
+                            onTap: (){
+                              Navigator.pushNamed(context, '/incomedesc');
+                            },
+                            child:  _iconWidget("images/icon_shouyi.png","收益详情",46.0),
                           ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_dingdanMixi.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "订单明细",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_shouyi.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "提现明细",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_friend.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "我的好友",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_setting.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "功能设置",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_contact.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "联系客服",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_share.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "分享邀请",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
+                        _iconWidget("images/icon_dingdanMixi.png","订单明细",46.0),
+                        _iconWidget("images/icon_shouyi.png","提现明细",46.0),
+                        _iconWidget("images/icon_friend.png","我的好友",46.0),
+                        _iconWidget("images/icon_setting.png","功能设置",46.0),
+                        _iconWidget("images/icon_contact.png","联系客服",46.0),
+                        _iconWidget("images/icon_share.png","分享邀请",46.0),
+
                       ],
                     ),
                   ),
@@ -486,174 +261,16 @@ class MinePage extends StatelessWidget {
                           crossAxisCount: 4, //横轴三个子widget
                           childAspectRatio: 1.5),
                       children: <Widget>[
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_qgjilu.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "抢购记录",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_chongzhi.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "去充值",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_duihuan.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "兑换记录",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_youihuiquan.png",
-                                  width: ScreenUtil().setWidth(52),
-                                  height: ScreenUtil().setWidth(52),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "优惠券",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_xiaodian.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "我的小店",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_dizhi.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "我的地址",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_yinhangka.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "银行卡",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                child: Image.asset(
-                                  "images/icon_qianggou.png",
-                                  width: ScreenUtil().setWidth(46),
-                                  height: ScreenUtil().setWidth(46),
-                                ),
-                              ),
-                              Container(
-                                child: new Text(
-                                  "每日抢购",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(40, 40, 40, 1),
-                                      fontSize: ScreenUtil().setSp(28)),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
+                        _iconWidget("images/icon_qgjilu.png","抢购记录",46.0),
+                        _iconWidget("images/icon_chongzhi.png","去充值",46.0),
+                        _iconWidget("images/icon_duihuan.png","兑换记录",46.0),
+
+                        _iconWidget("images/icon_youihuiquan.png","优惠券",46.0),
+                        _iconWidget("images/icon_xiaodian.png","我的小店",46.0),
+                        _iconWidget("images/icon_dizhi.png","我的地址",46.0),
+                        _iconWidget("images/icon_yinhangka.png","银行卡",46.0),
+                        _iconWidget("images/icon_qianggou.png","每日抢购",46.0),
+
                       ],
                     ),
                   ),
@@ -751,7 +368,8 @@ class __UserInfoWidgetState extends State<_UserInfoWidget> {
             margin: EdgeInsets.only(
                 left: ScreenUtil().setWidth(31),
                 top: ScreenUtil().setWidth(7),
-                right: ScreenUtil().setWidth(81)),
+                right: ScreenUtil().setWidth(61)
+            ),
             width: ScreenUtil().setWidth(118),
             height: ScreenUtil().setWidth(38),
             decoration: BoxDecoration(
@@ -766,14 +384,19 @@ class __UserInfoWidgetState extends State<_UserInfoWidget> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: ScreenUtil().setWidth(64)),
+            margin: EdgeInsets.only(top: ScreenUtil().setWidth(74)),
             child: Row(
               children: <Widget>[
-                Container(
-                  child: new Text("去提现",
-                      style: TextStyle(
-                          color: Color.fromRGBO(190, 190, 190, 1),
-                          fontSize: ScreenUtil().setSp(26))),
+                InkWell(
+                  onTap: (){
+                    Navigator.pushNamed(context, '/test');
+                  },
+                  child: Container(
+                    child: new Text("去提现",
+                        style: TextStyle(
+                            color: Color.fromRGBO(190, 190, 190, 1),
+                            fontSize: ScreenUtil().setSp(26))),
+                  ),
                 ),
                 Container(
                   margin: EdgeInsets.only(
