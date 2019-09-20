@@ -1,17 +1,10 @@
 # dk_shop
 
-A new Flutter project.
+自己学习中，练习flutter的项目，根据之前公司的设计稿还原了一部分，以后还会继续完善，大部分是学习页面布局的的静态页面。
 
-## Getting Started
+## 这是项目演示图
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
 ![image](https://github.com/1124863805/dk_shop/blob/master/images/%EF%BC%91.gif)
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# dk_shop
+# 运行方法
+lib/main.dart 主方法运行(要确保有dart和flutter的环境)
